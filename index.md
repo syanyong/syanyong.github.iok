@@ -1,37 +1,36 @@
-## Welcome to GitHub Pages
+# Mobile Robot Course
 
-You can use the [editor on GitHub](https://github.com/syanyong/syanyong.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+I have already summarized the content to bring up the Turtlesim.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Setup environment
 
-### Markdown
+Ref. http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+## Create package
+Before create the new package, the current folder must be `~/catkin_ws/src`.
+```
+cd ~/catkin_ws/src
+catkin_create_pkg beginner_tutorials std_msgs rospy roscpp
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Now you need to build the packages in the catkin workspace.
+Before build, the current folder must be `~/catkin_ws`.
 
-### Jekyll Themes
+```
+cd ~/catkin_ws
+catkin_make
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/syanyong/syanyong.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+Ref. http://wiki.ros.org/ROS/Tutorials/CreatingPackage
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Run Turtlesim Node
+Ref. http://wiki.ros.org/ROS/Tutorials/UnderstandingNodes
+
+
+## Run Teleop Node and publish topic
+
+Ref. http://wiki.ros.org/ROS/Tutorials/UnderstandingTopics
+
+## Control turtlesim using Python
+Ref. http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29
